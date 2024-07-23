@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws IOException {
 
@@ -18,8 +16,8 @@ public class Main {
             while ((line = reader.readLine()) != null) {
 
                 String[] row = line.split((","));
-                for(String index: row) {
-                    System.out.printf("%10s", index);
+                for(String word: row) {
+                    System.out.printf("%20s", word);
                 }
                 System.out.println();
             }
