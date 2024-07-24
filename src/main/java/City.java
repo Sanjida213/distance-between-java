@@ -1,30 +1,23 @@
-
 public class City {
-    private String cityName;
-    private double x;
-    private double y;
+    private final String name;
+    private final double latitude;
+    private final double longitude;
 
-    public double getX() {
-        return x;
+    public City(String name, double latitude, double longitude) {
+        this.name = name;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
-    public void setX(double x) {
-        this.x = x;
+    public String getName() {
+        return name;
     }
 
-    public String getCityName() {
-        return cityName;
+    public double getLatitude() {
+        return latitude;
     }
 
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
-    }
-
-    public double getY() {
-        return y;
-    }
-
-    public void setY(double y) {
-        this.y = y;
+    public double getLongitude() {
+        return longitude;
     }
 }
