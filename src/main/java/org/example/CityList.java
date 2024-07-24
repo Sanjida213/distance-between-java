@@ -1,3 +1,5 @@
+package org.example;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -5,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CityList {
-    private List<City> cities;
+    private final List<City> cities;
 
     public CityList(String filePath) {
         cities = new ArrayList<>();
@@ -34,7 +36,7 @@ public class CityList {
                 return city;
             }
         }
-        return null; // Return null if the city is not found
+        return null;
     }
 
     public List<City> getAllCities() {

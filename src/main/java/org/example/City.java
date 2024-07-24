@@ -1,3 +1,5 @@
+package org.example;
+
 public class City {
     private final String name;
     private final double latitude;
